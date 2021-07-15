@@ -1,0 +1,30 @@
+
+class SayHello{
+  	constructor(name){
+    	this.name=name
+    }
+  
+  funcTypeHello(){
+  	const handler = function(){
+    	return `hello, ${this.name}`;
+    }
+    return handler();
+  }
+  
+  lambdaTypeHello(){
+  	const handler = ()=>{
+    return `Hello, ${this.name}`;
+    }
+    return handler();
+  }
+}
+
+hello = new SayHello('user')
+console.log(hello.funcTypeHello());
+console.log(hello.lambdaTypeHello());
+
+
+
+
+// hello,  
+// Hello, user 

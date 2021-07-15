@@ -1,0 +1,14 @@
+var body=`<body>
+    	<h1>Welcome</h1>
+    </body>`;
+var name = 'abc';
+var message = `Hello ${name}`
+
+console.log(body);
+console.log(message);
+
+
+// <body>
+// <h1>Welcome</h1>
+// </body> 
+// Hello abc

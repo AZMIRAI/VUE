@@ -1,0 +1,11 @@
+const obj = {
+	name: 'user',
+	getName: function() {
+		return this.name;
+	}
+};
+
+console.log(obj.getName());
+
+
+//user
