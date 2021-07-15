@@ -4,7 +4,7 @@
 git add .;
 
 # 주석달기
-echo -n "커밋 코멘트 입력 : ";
+echo "커밋 코멘트 입력 : ";
 read comment;
 today=$(date);
 git commit -m "$today < $comment >"; 
