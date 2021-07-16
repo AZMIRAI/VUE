@@ -8,7 +8,5 @@ Vue.component('hello',{
 })
 
 let app = new Vue({
-
     el:'#app'
-
 });

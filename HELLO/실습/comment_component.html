@@ -6,14 +6,7 @@
 </head>
 <body>
     <div id="app">
-        <input type="text" v-model="user">
-        <input type="text" v-model="comment">
-        <button @click="save">저장</button><br>
-        <ul>
-            <li v-for="msg in messages">
-                <p>{{ msg.user}} : {{msg.comment}}</p>
-            </li>
-        </ul>
+        <comments></comments>
     </div>
     
 
