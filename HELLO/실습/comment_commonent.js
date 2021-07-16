@@ -1,3 +1,18 @@
+Vue.component('comments',{
+    
+    template:'', 
+    data: function(){
+        return {
+
+        }
+    }
+}
+
+
+
+);
+
+
 let app = new Vue ({
     el: '#app',
     data: {
