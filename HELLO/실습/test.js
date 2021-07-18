@@ -1,3 +1,18 @@
+/*Vue.component('add',{
+    template:'<button @click="save">{{"저장"}}</button>',
+    data(){
+        return {count:0}
+    },
+    methods:{
+        save(){
+            this.count += ""
+            this.$emit('event-add', 1);
+        }
+    },
+
+});
+*/
+
 Vue.component('add',{
     template:'<button @click="save">{{"저장"}}</button>',
     data(){
@@ -11,8 +26,6 @@ Vue.component('add',{
     },
 
 });
-
-
 
 
 
