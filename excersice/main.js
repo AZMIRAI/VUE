@@ -6,5 +6,6 @@ let app = new Vue ({
         image:'./assets/images/socks_blue.jpg',
         // inStock:true,
         inventory:100,
+        details:['80% cotton','20% polyester','Gender-neutral']
     }
 });
