@@ -37,7 +37,7 @@ Vue.component('product', {
     data() {
       return {
           product: '靴下',
-          brand: '「ビューマスタリー」',
+          brand: '「ヴュー・マスタリー」',
           selectedVariant: 0,
           details: ['80% cotton', '20% polyester', 'Gender-neutral'],
           variants: [
