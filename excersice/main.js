@@ -2,9 +2,10 @@ let app = new Vue ({
 
     el:'#app',
     data:{
+        brand:'Vue',
         product:'Socks' ,
         image:'./assets/images/socks_blue.jpg',
-        inStock:true,
+        inStock:false,
         // inventory:100,
         details:['80% cotton','20% polyester','Gender-neutral'],
     
@@ -30,6 +31,12 @@ let app = new Vue ({
         updateProduct(variantImage){
             this.image = variantImage
         },
+    },
+
+    computed:{
+        title(){
+            return this.brand + ' ' + this.product
+        }
     }
 });
 
