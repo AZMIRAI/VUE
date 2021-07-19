@@ -7,5 +7,16 @@ let app = new Vue ({
         inStock:true,
         // inventory:100,
         details:['80% cotton','20% polyester','Gender-neutral'],
+    
+        variants:[
+            {
+                variantId:2334,
+                variantColor:'green'
+            },
+            {
+                variantId:2335,
+                variantColor:'blue'
+            }
+        ],
     }
 });
