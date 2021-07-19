@@ -7,7 +7,7 @@ Vue.component('product', {
         </div>
   
         <div class="product-info">
-            <h1>{{ product }}</h1>
+            <h1>{{ title }}</h1>
             <p v-if="inStock">In Stock</p>
             <p v-else>Out of Stock</p>
             <p>Shipping: {{ shipping }}</p>
@@ -36,8 +36,8 @@ Vue.component('product', {
      `,
     data() {
       return {
-          product: 'Socks',
-          brand: 'Vue Mastery',
+          product: '靴下',
+          brand: '「ビューマスタリー」',
           selectedVariant: 0,
           details: ['80% cotton', '20% polyester', 'Gender-neutral'],
           variants: [
