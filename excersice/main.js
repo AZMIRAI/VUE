@@ -2,8 +2,8 @@ let app = new Vue ({
 
     el:'#app',
     data:{
-        brand:'Vue',
-        product:'Socks' ,
+        brand:'「近藤」',
+        product:'靴下' ,
         image:'./assets/images/socks_blue.jpg',
         inStock:false,
         // inventory:100,
