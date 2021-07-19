@@ -2,7 +2,7 @@ let app = new Vue ({
 
     el:'#app',
     data:{
-        product:'Socks' 
+        product:'Socks' ,
+        image:'./assets/images/socks_blue.jpg',
     }
-
 });
