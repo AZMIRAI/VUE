@@ -29,5 +29,6 @@ export default {
   margin-top: 60px;
 } */
 
+/* scss 쓰는 이유  프로젝트 테마를 하기위해서 */
 @import './assets/css/styles.css'
 </style>
