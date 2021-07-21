@@ -6,16 +6,19 @@
         <p>Cart ({{ cart.length }})</p>
         </div>
     <Product @add-to-cart="addToCart"></Product>
+    <Comments></Comments>
     </div>
 </template>
 
 <script>
 import Product from './Product.vue';
 
+import Comments from './Comments.vue';
 export default{
     name : 'ProductPage',
     components:{
-        Product
+        Product,
+        Comments
     },
     data(){
         return {cart:[]}

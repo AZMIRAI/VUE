@@ -30,14 +30,16 @@
             </button>
 
          </div>  
-      
+  
       </div>
 </template>
 
 <script>
   export default{
+    
    data() {
       return {
+        
           product: 'Socks',
           brand: 'Vue Mastery',
           selectedVariant: 0,
@@ -56,16 +58,23 @@
               variantQuantity: 0     
             }
           ],
+      
+                user : null,
+          comment : null, 
+          messages:[],
+      
       }
     },
     methods: {
+      
     addToCart: function() {
         //this.cart+=1
         this.$emit('add-to-cart', this.variants[this.selectedVariant].variantId)
     },
     updateProduct: function(index) {  
         this.selectedVariant = index
-    }
+    },
+
     },
     computed: {
         title() {

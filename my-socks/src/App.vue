@@ -14,7 +14,7 @@ export default {
   components: {
     // HelloWorld,
     // Product
-    ProductPage
+    ProductPage,
   }
 }
 </script>
