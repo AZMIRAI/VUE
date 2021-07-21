@@ -12,7 +12,7 @@
             <p>Shipping: {{ shipping }}</p>
   
             <ul>
-              <li v-for="(detail,i ) in details" : key="i">{{ detail }}</li>
+              <li v-for="detail in details" :key="detail.id">{{ detail.info }}</li>
             </ul>
   
             <div class="color-box"
@@ -41,7 +41,7 @@
           product: 'Socks',
           brand: 'Vue Mastery',
           selectedVariant: 0,
-          details: ['80% cotton', '20% polyester', 'Gender-neutral'],
+          details: [{id:1, info:'80% cotton'}, {id:2, info : '20% polyester'}, {id: 3, info : 'Gender-neutral'}],
           variants: [
             {
               variantId: 2234,
