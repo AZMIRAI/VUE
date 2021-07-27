@@ -10,6 +10,11 @@
             <p>{{name}} - {{value}}
             </p>
         </div>
+	
+	<div v-for="(value, name) in user">
+		<p> {{name}} - {{value}}
+		</p>
+	</div>
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
