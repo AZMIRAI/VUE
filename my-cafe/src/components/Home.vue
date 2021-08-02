@@ -1,11 +1,12 @@
 <template>
-    <div id="app">
+    <!-- <div id="app">
         <h1>Home</h1>
-    </div>
+    </div> -->
+    <h1>Welcome {{$store.state.userId}} </h1>
 </template>
 
 <script>
 export default {
-    name:'Home'
+    // name:'Home'
 };
 </script>
