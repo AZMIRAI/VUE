@@ -4,6 +4,7 @@
     <input v-model="newId" type="text"><button @click="updateUserId">Save</button>
     <br>
     <button @click = "updateReviews">Update</button>
+    <h1> {{$store.getters.reviewCount}} </h1>
     <ul>
         <li v-for="r in $store.state.reviews" :key="r.id">
             <p> {{ r.body }}</p>

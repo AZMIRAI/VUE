@@ -38,6 +38,11 @@ export default new Vuex.Store({
                 console.log(err)
             })
         }
+    },
+    getters:{
+        reviewCount(state /* , getters */){
+            return state.reviews.length
+        }
     }
 });
 
