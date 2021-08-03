@@ -14,9 +14,9 @@
 
  <div id="app">
     <h1>Welcome {{ userId }} </h1>
-    <input v-model="newId" type="text"> 
-    <button @click="saveUserId">Save</button><br>
-    <button @click="updateReviews">Update</button>
+    <v-text-field label="new user id" v-model="newId"></v-text-field>
+    <v-btn @click="saveUserId" elevation="2">Save</v-btn><br>
+    <v-btn @click="updateReviews" color="primary">Update</v-btn>
     <h1>{{reviewCount}}</h1>
     <!-- <ul>
         <li v-for="r in reviews" :key="r.id">
