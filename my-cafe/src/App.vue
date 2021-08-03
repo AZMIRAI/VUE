@@ -44,7 +44,13 @@
     </v-app-bar>
 
     <v-main>
-      <router-view></router-view>
+      <v-container>
+        <v-row>
+          <v-col>
+            <router-view></router-view>
+          </v-col>
+        </v-row>
+      </v-container>
       <!-- <HelloWorld/> -->
     </v-main>
   </v-app>
