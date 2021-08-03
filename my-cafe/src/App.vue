@@ -27,14 +27,20 @@
 
       <v-spacer></v-spacer>
 
-      <v-btn
+      <!-- <v-btn
         href="https://github.com/vuetifyjs/vuetify/releases/latest"
         target="_blank"
         text
       >
         <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
+        <v-icon>mdi-open-in-new</v-icon></v-btn> -->
+      <v-btn to="/" text>
+      <v-icon>mdi-home</v-icon>
+      <span class="mr-2">Home</span>
       </v-btn>
+      <v-btn to="/menus" text><span class="mr-2">Menus</span></v-btn>
+      <v-btn to="/events" text><span class="mr-2">Events</span></v-btn>
+      <v-btn to="/reviews" text><span class="mr-2">reviews</span></v-btn>
     </v-app-bar>
 
     <v-main>
