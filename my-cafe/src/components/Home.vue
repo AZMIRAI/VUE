@@ -10,22 +10,44 @@
             <p> {{r.body}}</p>
         </li>
     </ul>
-    </div> -->
+    </div>  -->
 
-<div id="app">
+ <div id="app">
     <h1>Welcome {{ userId }} </h1>
     <input v-model="newId" type="text"> 
     <button @click="saveUserId">Save</button><br>
     <button @click="updateReviews">Update</button>
     <h1>{{reviewCount}}</h1>
-    <ul>
+    <!-- <ul>
         <li v-for="r in reviews" :key="r.id">
             <p> {{r.body}} </p>
         </li>
-    </ul>
-</div>
+    </ul> -->
 
-</template>
+<v-simple-table>
+    <template v-slot:default>
+    <thead>
+        <tr> 
+                <th>Email</th>
+                <th>Comment</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr v-for="item in reviews" :key="item.id">
+            <td> {{item.email}}</td>
+            <td> {{item.body}}</td>
+        </tr>
+    </tbody>
+    </template>
+</v-simple-table>
+
+
+</div> 
+
+</template> 
+
+
+
 
 <script>
 

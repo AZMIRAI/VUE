@@ -19,7 +19,7 @@ export default {
         getReviews({commit}){
             axios.get('/api/comments')
             .then(response=>{
-                commit('upadateReviews', response.data)
+                commit('updateReviews', response.data)
             })
             .catch(err=>{
                 console.log(err)
