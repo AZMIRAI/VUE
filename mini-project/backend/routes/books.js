@@ -15,6 +15,6 @@ router.get('/', (req, res) => {
 
 router.get('/:bookId', (req,res)=>{
     const bookId = req.params.bookId
-    let book = books.find(element=> elment.bookId==bookId)
+    let book = books.find(element=> element.bookId==bookId)
     res.json(book)
 })
