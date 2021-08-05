@@ -11,7 +11,13 @@ Vue.use(VueRouter)
 const routes = [
   { path: '/' ,name: 'Home',component: Home },
   { path: '/add' ,name: 'Add',component: Add, meta:{requiresAuth:true}},
-  { path: '/memos/:memoId' ,name: 'Read',component: Read },
+  { path: '/memos/:memoId' ,
+    name: 'Read',component: Read,
+    beforeEnter:(to, from, next)=>{
+      alert('Signin please')
+      next('/signin');
+    }
+  },
   { path: '/signin' ,name: 'Signin',component: Signin },
   { path: '/signup' ,name: 'Signup',component: Signup }, 
 ]
