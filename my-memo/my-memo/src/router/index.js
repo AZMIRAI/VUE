@@ -10,7 +10,7 @@ Vue.use(VueRouter)
 
 const routes = [
   { path: '/' ,name: 'Home',component: Home },
-  { path: '/add' ,name: 'Add',component: Add },
+  { path: '/add' ,name: 'Add',component: Add, meta:{requiresAuth:true}},
   { path: '/memos/:memoId' ,name: 'Read',component: Read },
   { path: '/signin' ,name: 'Signin',component: Signin },
   { path: '/signup' ,name: 'Signup',component: Signup }, 
@@ -23,7 +23,12 @@ const router = new VueRouter({
 })
 
 router.beforeEach((to,from,next)=>{
-  next();
+  if(to.mached.some((record)=>record.meta.requiresAuth)){
+    alert('Signin please')
+    next('/signin');
+  } else {
+    next();
+  }
 });
 
 export default router
