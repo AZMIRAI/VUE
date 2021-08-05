@@ -8,15 +8,17 @@ import Signup from '../views/Signup'
 
 Vue.use(VueRouter)
 
-const auth=(to, from, next)=>{
-  if(to.matched.some((record)=>record.meta.requiresAuth)){
-    if(localStorage.getItem('accessToken')==null){
-      alert('Signin please')
-      next('/signin')
-    }
-  }
-  next();
-}
+
+
+// const auth=(to, from, next)=>{
+//   if(to.matched.some((record)=>record.meta.requiresAuth)){
+//     if(localStorage.getItem('accessToken')==null){
+//       alert('Signin please')
+//       next('/signin')
+//     }
+//   }
+//   next();
+// }
 
 
 const routes = [
@@ -40,13 +42,14 @@ const router = new VueRouter({
   routes
 })
 
-router.beforeEach((to,from,next)=>{
-  if(to.matched.some((record)=>record.meta.requiresAuth)){
-    alert('Signin please')
+router.beforeEach( (to, from, next) => {
+  // console.log('afadsfa');
+  if(to.matched.some( (record) => record.meta.requiresAuth && !localStorage.getItem('accessToken'))) {
+    alert('Signin please');
     next('/signin');
   } else {
     next();
   }
-});
+})
 
 export default router

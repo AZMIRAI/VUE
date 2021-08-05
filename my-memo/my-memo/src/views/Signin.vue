@@ -4,7 +4,7 @@
         <form @submit.prevent="userid, password">
             <input type="text" v-model="userid" placeholder="User ID" />
             <input type="password" v-model="password" placeholder="Password" />
-            <input type="submit" value="Signin" />
+            <input type="submit" @click="onSubmit" value="Signin" />
         </form>
         <p><i>{{message}}</i></p>
     </div>
@@ -30,6 +30,7 @@ export default {
                 this.message='Signin Failed.'
             })
         }
-    }
+    },
+    
 }
 </script>

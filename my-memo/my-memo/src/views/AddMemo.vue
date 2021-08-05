@@ -21,9 +21,9 @@ import memoApi from '../apis/memos'
         methods:{
             selectFile() {
                 this.file = this.$refs.file.files[0]
-             }
+             },
             addMemo(){
-                const data = new Formdata();
+                const data = new FormData();
                 data.append('title',this.title);
                 data.append('content', this.content)
                 data.append('file', this.file)

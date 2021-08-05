@@ -10,7 +10,7 @@ instance.interceptors.request.use(
             config.headers.Authorization=token
         else
             console.log('No token')
-        config.headers['Content-type']='multipart/form-data';
+        config.headers['Content-Type']='multipart/form-data';
         return config;
     },
     // 요청 에러 처리
