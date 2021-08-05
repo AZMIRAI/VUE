@@ -41,7 +41,7 @@ const router = new VueRouter({
 })
 
 router.beforeEach((to,from,next)=>{
-  if(to.mached.some((record)=>record.meta.requiresAuth)){
+  if(to.matched.some((record)=>record.meta.requiresAuth)){
     alert('Signin please')
     next('/signin');
   } else {

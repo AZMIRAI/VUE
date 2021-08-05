@@ -10,7 +10,7 @@ new Vue({
   router,
   vuetify,
   store,
-  beforCreate(){
+  beforeCreate(){
     this.$store.commit('getAccessToken')
   },
   render: h => h(App)
