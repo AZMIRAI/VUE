@@ -9,15 +9,16 @@ import Signup from '../views/Signup'
 Vue.use(VueRouter)
 
 const routes = [
-  { path: '/' ,name: 'Home',component: Home },
+  { path: '/' ,name: 'Home',component: Home,meta:{requiresAuth:true}},
   { path: '/add' ,name: 'Add',component: Add, meta:{requiresAuth:true}},
-  { path: '/memos/:memoId' ,
-    name: 'Read',component: Read,
-    beforeEnter:(to, from, next)=>{
-      alert('Signin please')
-      next('/signin');
-    }
-  },
+  // { path: '/memos/:memoId' ,
+  //   name: 'Read',component: Read,
+  //   beforeEnter:(to, from, next)=>{
+  //     alert('Signin please')
+  //     next('/signin');
+  //   }
+  // },
+  { path: '/memos/:memoId' ,name: 'Read',component: Read, meta:{requiresAuth:true}},
   { path: '/signin' ,name: 'Signin',component: Signin },
   { path: '/signup' ,name: 'Signup',component: Signup }, 
 ]
