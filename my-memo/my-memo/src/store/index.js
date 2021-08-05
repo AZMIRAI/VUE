@@ -16,7 +16,7 @@ export default new Vuex.Store({
     },
     mutations:{
         signin(state, payload){
-            state.accesssToken = payload.accessToken
+            state.accessToken = payload.accessToken
             localStorage.setItem('accessToken',state.accessToken)
         },
         signout(state){
