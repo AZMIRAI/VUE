@@ -23,7 +23,7 @@ const router = new VueRouter({
 })
 
 router.beforeEach((to,from,next)=>{
-  netx ();
+  next();
 });
 
 export default router
