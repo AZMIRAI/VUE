@@ -29,7 +29,7 @@ export default {
       // data.append('name',this.r_name);
       // data.append('password',this.r_pwd);
       const data = {
-        'userid' : this.r_email,
+        'email' : this.r_email,
         'name' : this.r_name,
         'password' : this.r_pwd
       };
